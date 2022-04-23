@@ -9,7 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Install composer and PHP
+    - name: Install PHP
       run: sudo apt install php -y && composer
     - name: Check Php Version
       run: php -v
+    - name: Install Composer
+      run: sudo apt install composer
+    - name: Check Composer Version
+      run: composer -V
