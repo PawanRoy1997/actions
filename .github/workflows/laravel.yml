@@ -10,6 +10,6 @@ jobs:
 
     steps:
     - name: Install composer and PHP
-      run: apt install php -y && composer
+      run: sudo apt install php -y && composer
     - name: Check Php Version
       run: php -v
