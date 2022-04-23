@@ -17,3 +17,7 @@ jobs:
       run: sudo apt install composer
     - name: Check Composer Version
       run: composer -V
+    - name: Install sqlite
+      run: sudo apt install sqlite3
+    - name: Check Sqlite
+      run: sqlite3 --version
